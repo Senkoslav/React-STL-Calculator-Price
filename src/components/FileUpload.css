@@ -1,0 +1,11 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #1475cf;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 5px;
+}
