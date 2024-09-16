@@ -32,8 +32,16 @@ function App() {
         pricePerCm3 = 0.12;
         break;
     }
+    
     const effectiveVolume = volume * (fillPercentage / 100);
-    setCost(effectiveVolume * pricePerCm3);
+    let calculatedCost = effectiveVolume * pricePerCm3;
+
+    if (calculatedCost < 5) {
+      calculatedCost += 5;
+    } else if (calculatedCost > 10) {
+      calculatedCost += 3;
+    }
+    setCost(calculatedCost);
   };
 
   const handleMaterialChange = (material: string) => {
