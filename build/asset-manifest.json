@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Senkoslav/React-STL-Calculator-Price.git/static/css/main.d7bb21b7.css",
-    "main.js": "/Senkoslav/React-STL-Calculator-Price.git/static/js/main.2842c5d3.js",
-    "static/js/453.b0918930.chunk.js": "/Senkoslav/React-STL-Calculator-Price.git/static/js/453.b0918930.chunk.js",
-    "index.html": "/Senkoslav/React-STL-Calculator-Price.git/index.html",
-    "main.d7bb21b7.css.map": "/Senkoslav/React-STL-Calculator-Price.git/static/css/main.d7bb21b7.css.map",
-    "main.2842c5d3.js.map": "/Senkoslav/React-STL-Calculator-Price.git/static/js/main.2842c5d3.js.map",
-    "453.b0918930.chunk.js.map": "/Senkoslav/React-STL-Calculator-Price.git/static/js/453.b0918930.chunk.js.map"
+    "main.css": "/React-STL-Calculator-Price/static/css/main.d7bb21b7.css",
+    "main.js": "/React-STL-Calculator-Price/static/js/main.59c99a3f.js",
+    "static/js/453.b0918930.chunk.js": "/React-STL-Calculator-Price/static/js/453.b0918930.chunk.js",
+    "index.html": "/React-STL-Calculator-Price/index.html",
+    "main.d7bb21b7.css.map": "/React-STL-Calculator-Price/static/css/main.d7bb21b7.css.map",
+    "main.59c99a3f.js.map": "/React-STL-Calculator-Price/static/js/main.59c99a3f.js.map",
+    "453.b0918930.chunk.js.map": "/React-STL-Calculator-Price/static/js/453.b0918930.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7bb21b7.css",
-    "static/js/main.2842c5d3.js"
+    "static/js/main.59c99a3f.js"
   ]
 }
