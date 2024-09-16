@@ -61,7 +61,7 @@ function App() {
         fillPercentage={fillPercentage}
         onFillPercentageChange={handleFillPercentageChange}
       />
-      <button onClick={() => calculateCost(volume!, fillPercentage, material)}>Рассчитать стоимость</button>
+      <button onClick={() => calculateCost(volume!, fillPercentage, material)} hidden>Рассчитать стоимость</button>
       {cost && <p>Ориентировочная стоимость: {cost.toFixed(2)} BYN</p>}
     </div>
   );

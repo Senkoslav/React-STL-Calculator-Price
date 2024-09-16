@@ -1,6 +1,6 @@
 // FileUpload.tsx
 import { FaFileUpload } from "react-icons/fa";
-import React, { ChangeEvent } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import './FileUpload.css';
 
 interface FileUploadProps {
@@ -8,9 +8,12 @@ interface FileUploadProps {
 }
 
 const FileUpload: React.FC<FileUploadProps> = ({ onFileSelected }) => {
+  const [fileName, setFileName] = useState<string | null>(null);
   const handleFileChange = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
-      onFileSelected(e.target.files[0]);
+      const file = e.target.files[0];
+      setFileName(file.name); 
+      onFileSelected(file);
     }
   };
 
@@ -22,6 +25,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFileSelected }) => {
       <label htmlFor="stl-upload">Загрузите STL файл:</label>
       <FaFileUpload size={50}/>
       <input type="file" id="stl-upload" accept=".stl" onChange={handleFileChange} className="inpit-field" hidden/>
+      {fileName && <p>Выбран файл: {fileName}</p>} {/* Отображаем имя файла */}
     </div>
     </form>
   );
